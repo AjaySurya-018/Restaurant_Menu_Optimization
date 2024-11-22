@@ -5,7 +5,7 @@ import numpy as np
 
 def load_and_preprocess_data():
     # Since we can't directly access the URL, let's create a sample dataset
-    data = pd.read_excel("R:/OR/data/maindata.xlsx")
+    data = pd.read_excel("data/maindata.xlsx")
     data = data.drop_duplicates(subset=['RestaurantID', 'MenuItem'])
     return data
 
